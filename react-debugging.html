@@ -63,13 +63,18 @@
           padding: "10px"
         }
         // No need to change anything ABOVE this line ^
+         
+        // 1. missing all encompassing return fragment
+        // 2. onClick button does not have any functionality. Missing function declaration 
+        // 3. next button element onclick needs to be camel casing, e.g onClick
 
         return (
+          <>
           <h1>Draw a Card</h1>
-          <button onClick={}>
+          <button onClick={drawCard}>
             Click to Draw a Card
           </button>
-          <button onclick={shuffle}>
+          <button onClick={shuffle}>
             Return Cards and Shuffle Deck
           </button>
           <div style={handStyles}>
@@ -81,6 +86,7 @@
               )
             })}
           </div>
+          </>
         )
       }
 
